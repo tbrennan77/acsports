@@ -1,4 +1,4 @@
-#ACSports Custom Theme and Post Types
+# ACSports Custom Theme and Post Types
 
 
 ## Custom "Cards" Post Type
