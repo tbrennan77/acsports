@@ -16,19 +16,19 @@ The following will create a new `card` post type:
 
 Card attributes start with "card_" (that's the word card with an underscore)
 
-card_first_name 	 = Player First Name
-card_last_name  	 = Player Last Name
-card_sport			 = Name of the Sport
-card_team			 = Name of the Team
-card_brand			 = Name of the Brand
-card_is_graded		 = Is this card Graded
-card_grading_company = The grading company
-card_grade	 		 = The grade
-card_is_pc			 = Is the card a Personal Collection (PC)
-card_is_fs			 = Is the card For Sale (FS)
-card_is_ft			 = Is the card For Trade (FT)
-card_sale_price		 = Card Sale Price
-card_trade_demand	 = Card Trade Demand(s)
+- card_first_name 	 = Player First Name
+- card_last_name  	 = Player Last Name
+- card_sport			 = Name of the Sport
+- card_team			 = Name of the Team
+- card_brand			 = Name of the Brand
+- card_is_graded		 = Is this card Graded
+- card_grading_company = The grading company
+- card_grade	 		 = The grade
+- card_is_pc			 = Is the card a Personal Collection (PC)
+- card_is_fs			 = Is the card For Sale (FS)
+- card_is_ft			 = Is the card For Trade (FT)
+- card_sale_price		 = Card Sale Price
+- card_trade_demand	 = Card Trade Demand(s)
 
 The custom post type (CPT) code is in the child theme [functions.php](https://github.com/tbrennan77/acsports/blob/main/wp-content/themes/buddyboss-theme-child/functions.php) file
 
