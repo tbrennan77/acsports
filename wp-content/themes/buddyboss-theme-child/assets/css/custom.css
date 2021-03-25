@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+This is your custom stylesheet.
+
+Add your own styles here to make theme updates easier.
+To override any styles from other stylesheets, simply copy them into here and edit away.
+
+Make sure to respect the media queries! Otherwise you may
+accidentally add desktop styles to the mobile layout.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+--------------------------------------------------------------*/
+
+@import url("https://use.typekit.net/fhj4xld.css");
+
+body.bb-custom-typo {
+    font-family: proxima-nova, sans-serif;
+}
+
+.bb-custom-typo h1,
+.bb-custom-typo .h1,
+.bb-custom-typo h2,
+.bb-custom-typo .h2,
+.bb-custom-typo h3,
+.bb-custom-typo .h3,
+.bb-custom-typo h4,
+.bb-custom-typo .h4,
+.bb-custom-typo h5,
+.bb-custom-typo .h5,
+.bb-custom-typo h6,
+.bb-custom-typo .h6,
+.bb-custom-typo .bb-course-footer,
+.bb-custom-typo .ld-table-list-header .ld-text,
+.bb-custom-typo .gamipress-achievement-points {
+    font-family: proxima-soft, sans-serif;
+}
+
+.bb-custom-typo #content .mepr-price-menu .mepr-price-box-title {
+    font-family: proxima-soft, sans-serif !important;
+}
+
+.primary-menu>li>a,
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+.entry-title, .widget-title, .show-support h6, label,
+.bb-custom-typo .mepr-price-box-price span,
+.bb-custom-typo .learndash-wrapper #ld-profile .ld-profile-heading {
+    font-family: proxima-soft, sans-serif !important;
+    font-weight: 400;
+}
+
+.bb-custom-typo .ld-profile-stats .ld-profile-stat strong {
+    font-family: proxima-soft, sans-serif;
+    font-weight: 700;
+}
+
+.home .entry-header {
+  display: none !important;
+}
+
+.home .content-area {
+	padding-top: 0px;
+}
