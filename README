@@ -1,3 +1,19 @@
+#ACSports Custom Theme and Post Types
+
+
+## Custom "Cards" Post Type
+
+We created a custom post type (CPT) for trading cards. We use [Advanced Custom Fields](https://www.advancedcustomfields.com/) to create custom attributes for this post type. [Gravity Forms](https://www.gravityforms.com/) is used as the form provider to input card data. 
+
+The following will create a new `card` post type:
+1. User visits the [trading card page](http://acsportsj.kinsta.cloud/mls/)
+2. User fills out the form
+3. Form Submit creates a new `card` post from the form data. The [Advanced Post Creation](https://docs.gravityforms.com/category/add-ons-gravity-forms/advanced-post-creation-add-on/) add-on is used to
+4. User is directed to the specifc post created by the form submit. Example [here](http://acsportsj.kinsta.cloud/cards/lebron-james/) 
+
+
+## Custom trading card attributes
+
 Card attributes start with "card_" (that's the word card with an underscore)
 
 card_first_name 	 = Player First Name
@@ -14,6 +30,6 @@ card_is_ft			 = Is the card For Trade (FT)
 card_sale_price		 = Card Sale Price
 card_trade_demand	 = Card Trade Demand(s)
 
-The custom post type (CPT) code is in the child theme functions.php file
+The custom post type (CPT) code is in the child theme [functions.php](https://github.com/tbrennan77/acsports/blob/main/wp-content/themes/buddyboss-theme-child/functions.php) file
 
-custom_post_type() is the name of the function that creates the CPT
+`custom_post_type()` is the name of the function that creates the CPT.
