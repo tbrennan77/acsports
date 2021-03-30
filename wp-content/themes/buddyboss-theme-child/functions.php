@@ -51,11 +51,21 @@ function buddyboss_theme_child_scripts_styles()
 
   // Javascript
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri().'/assets/js/custom.js', '', '1.0.0' );
+
+  /* 
+   * Enqueue Bootstrap 4 for Card custom post type
+   */
+  if (is_singular( 'cards' )) {
+    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js', '', '1.0.0');
+
+    wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css', '', '1.0.0' );
+  }
 }
 add_action( 'wp_enqueue_scripts', 'buddyboss_theme_child_scripts_styles', 9999 );
 
 
 /****************************** CUSTOM FUNCTIONS ******************************/
+
 
 /*
 * Custom Post Type for Trading Cards
