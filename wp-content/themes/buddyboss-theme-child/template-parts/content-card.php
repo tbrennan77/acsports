@@ -10,12 +10,52 @@
 
 <?php 
 global $post;
-?>
-content-card.php
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+
+// Get ACF data
+$image_front        = get_field('card_front_image');
+$image_back         = get_field('card_back_image');
+$card_first_name    = get_field('card_first_name');
+$card_last_name     = get_field('card_last_name');
+$card_sport         = get_field('card_sport');
+$card_team          = get_field('card_team');
+$card_brand         = get_field('card_brand');
+$card_is_graded     = get_field('card_is_graded');
+$card_is_pc         = get_field('card_is_pc');
+$card_is_fs         = get_field('card_is_fs');
+$card_is_ft         = get_field('card_is_ft');
+$card_sale_price    = get_field('card_sale_price');
+$card_trade_demand  = get_field('card_trade_demand');
+
+echo $image_front . "<br />";
+echo $image_back . "<br />";
+echo $card_first_name . "<br />";
+echo $card_last_name . "<br />";
+echo $card_sport . "<br />";
+echo $card_team . "<br />";
+echo $card_brand . "<br />";
+echo $card_is_graded . "<br />";
+echo $card_is_pc . "<br />";
+echo $card_is_fs . "<br />";
+echo $card_is_ft . "<br />";
+echo $card_sale_price . "<br />";
+echo $card_trade_demand . "<br />";
+
+//echo the_meta();
+
+// $image_id  = get_post_meta( $post->ID, 'card_front_image', true );
+// $image_src = wp_get_attachment_url( $image_id );
+
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<img id="book_image" src="<?php echo $image_front ?>" style="max-width:100%;" />
 		<div class="entry-content-wrap">
-    
+            <?php if( !empty( $image ) ): ?>
+            <aside class="featured-image">
+                
+            </aside>
+            <?php endif; ?>
 			<header class="entry-header">
 				<?php
 				if ( is_singular() && ! is_related_posts() ) :
